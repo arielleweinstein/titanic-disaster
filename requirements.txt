@@ -1,0 +1,9 @@
+#data
+pandas==2.2.3
+numpy==1.26.4
+
+#ML
+scikit-learn==1.5.2
+
+#visuals
+matplotlib==3.9.2
