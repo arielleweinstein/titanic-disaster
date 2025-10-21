@@ -2,14 +2,13 @@
 FROM python:3.11-slim
 
 # Set the working directory in the container
-WORKDIR /app/code_run
+WORKDIR /app
 
-# Copy your code and requirements into the container
-COPY src/code_run/ ./      
-COPY requirements.txt ../
+# Copy everything into the container
+COPY . .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r ../requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the app
-CMD ["python", "app.py"]
+CMD ["python", "src/code_run/app.py"]
