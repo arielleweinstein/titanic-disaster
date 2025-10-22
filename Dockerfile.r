@@ -1,4 +1,4 @@
-FROM rocker/r-base:4.3.1
+FROM rocker/tidyverse:latest
 
 # set the working directory
 WORKDIR /app
@@ -11,4 +11,4 @@ COPY install_packages.R /app/
 RUN Rscript install_packages.R
 
 # Run the app
-CMD ["Rscript", "analysis.R"]
+CMD ["Rscript", "src/r/analysis.R"]
