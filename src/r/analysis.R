@@ -28,9 +28,7 @@ train <- train %>%
   mutate(Sex = recode(Sex, "male" = 1, "female" = 0))
 
 print("Set up model as logistic regression with Survived as the target variable and inputs as feature columns.")
-model <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare,
-             data = train,
-             family = "binomial")
+model <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare, data = train, family = "binomial")
 
 print('Making predictions for survival based on training data')
 y_pred_prob <- predict(model, newdata = train, type = "response")
