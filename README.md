@@ -3,6 +3,7 @@
 ### Welcome!
 Welcome to the Titanic Disaster survival predictor. This repo will take existing data on passengers and whether they survived the disaster and use it to train a model that will predict survival of potential passengers using Logistic Regression in both Python and R.
 ![Image of the Titanic](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/600px-RMS_Titanic_3.jpg)
+Image via "https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg"
 
 ### Data
 This project is built off of data from the Kaggle website. To run it, you will need to download the train.csv and test.csv files from the link below:
