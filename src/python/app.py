@@ -55,4 +55,4 @@ X_test = test[feature_cols]
 print('Create new column in the test data for the model predictions "Survived" based on the test data')
 test['Survived'] = model.predict(X_test)
 print('Save the passenger ID and "Survived" column to a csv called prediction_file.csv')
-test[['PassengerId', 'Survived']].to_csv('prediction_file.csv', index=False)
+test[['PassengerId', 'Survived']].to_csv('prediction_file_python.csv', index=False)
